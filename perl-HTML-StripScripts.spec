@@ -4,7 +4,7 @@
 #
 Name     : perl-HTML-StripScripts
 Version  : 1.06
-Release  : 7
+Release  : 8
 URL      : https://cpan.metacpan.org/authors/id/D/DR/DRTECH/HTML-StripScripts-1.06.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/D/DR/DRTECH/HTML-StripScripts-1.06.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libh/libhtml-stripscripts-perl/libhtml-stripscripts-perl_1.06-1.debian.tar.xz
@@ -33,7 +33,7 @@ dev components for the perl-HTML-StripScripts package.
 cd ..
 %setup -q -T -D -n HTML-StripScripts-1.06 -b 1
 mkdir -p deblicense/
-mv %{_topdir}/BUILD/debian/* %{_topdir}/BUILD/HTML-StripScripts-1.06/deblicense/
+cp -r %{_topdir}/BUILD/debian/* %{_topdir}/BUILD/HTML-StripScripts-1.06/deblicense/
 
 %build
 export http_proxy=http://127.0.0.1:9/
