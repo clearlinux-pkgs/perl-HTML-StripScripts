@@ -4,11 +4,11 @@
 #
 Name     : perl-HTML-StripScripts
 Version  : 1.06
-Release  : 10
+Release  : 11
 URL      : https://cpan.metacpan.org/authors/id/D/DR/DRTECH/HTML-StripScripts-1.06.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/D/DR/DRTECH/HTML-StripScripts-1.06.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libh/libhtml-stripscripts-perl/libhtml-stripscripts-perl_1.06-1.debian.tar.xz
-Summary  : 'Strip scripting constructs out of HTML'
+Summary  : Strip scripting constructs out of HTML
 Group    : Development/Tools
 License  : Artistic-1.0-Perl
 BuildRequires : buildreq-cpan
@@ -23,6 +23,7 @@ use HTML::StripScripts;
 Summary: dev components for the perl-HTML-StripScripts package.
 Group: Development
 Provides: perl-HTML-StripScripts-devel = %{version}-%{release}
+Requires: perl-HTML-StripScripts = %{version}-%{release}
 
 %description dev
 dev components for the perl-HTML-StripScripts package.
