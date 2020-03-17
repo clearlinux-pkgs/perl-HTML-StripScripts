@@ -4,7 +4,7 @@
 #
 Name     : perl-HTML-StripScripts
 Version  : 1.06
-Release  : 14
+Release  : 15
 URL      : https://cpan.metacpan.org/authors/id/D/DR/DRTECH/HTML-StripScripts-1.06.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/D/DR/DRTECH/HTML-StripScripts-1.06.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libh/libhtml-stripscripts-perl/libhtml-stripscripts-perl_1.06-1.debian.tar.xz
@@ -79,7 +79,7 @@ make TEST_VERBOSE=1 test
 %install
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/perl-HTML-StripScripts
-cp %{_builddir}/HTML-StripScripts-1.06/deblicense/copyright %{buildroot}/usr/share/package-licenses/perl-HTML-StripScripts/f6ee5333ac341a2dfe65f486a1da278a1e5d3597
+cp %{_builddir}/debian/copyright %{buildroot}/usr/share/package-licenses/perl-HTML-StripScripts/f6ee5333ac341a2dfe65f486a1da278a1e5d3597
 if test -f Makefile.PL; then
 make pure_install PERL_INSTALL_ROOT=%{buildroot} INSTALLDIRS=vendor
 else
@@ -103,4 +103,4 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.30.1/HTML/StripScripts.pm
+/usr/lib/perl5/vendor_perl/5.30.2/HTML/StripScripts.pm
