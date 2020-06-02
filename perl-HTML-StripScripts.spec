@@ -4,7 +4,7 @@
 #
 Name     : perl-HTML-StripScripts
 Version  : 1.06
-Release  : 15
+Release  : 16
 URL      : https://cpan.metacpan.org/authors/id/D/DR/DRTECH/HTML-StripScripts-1.06.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/D/DR/DRTECH/HTML-StripScripts-1.06.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libh/libhtml-stripscripts-perl/libhtml-stripscripts-perl_1.06-1.debian.tar.xz
@@ -103,4 +103,4 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.30.2/HTML/StripScripts.pm
+/usr/lib/perl5/vendor_perl/5.30.3/HTML/StripScripts.pm
